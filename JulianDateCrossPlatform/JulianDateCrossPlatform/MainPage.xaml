@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:JulianDateCrossPlatform"
+             x:Class="JulianDateCrossPlatform.MainPage"
+             BackgroundImage="julius.jpg">
+    <!--<ContentPage.BackgroundImage>
+    <Image Source="{local:ImageResource WorkingWithImages.beach.jpg}" />
+</ContentPage.BackgroundImage>-->
+    <StackLayout>
+        <!-- Place new controls here --> <Label Text="{Binding Year}" FontSize="Large" x:Name="YearLabel"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="CenterAndExpand" />
+        <Label Text="Julian Date" FontSize="Small" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Label Text="0" FontSize="Large" x:Name="JulianDateLabel"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Label Text="1/1/2019" FontSize="Large" x:Name="GregorianDateLabel"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        <Slider Minimum="0" Maximum="365" x:Name="DateSlider" ValueChanged="DateSlider_OnValueChanged" />
+    </StackLayout>
+
+</ContentPage>
